@@ -104,3 +104,78 @@
 
 //task8
 
+// let a = prompt("ededi daxil edin");
+// if (a < 0) {console.log("menfi");}
+// else if (a > 0) {console.log("musbet");}
+// else {console.log("0");}
+
+
+//task9
+
+// let n = Number(prompt("ededi daxil edin"));
+// let res = 0;
+// while (n > 0)
+// {
+//     res ++;
+//     n /= 10;
+//     n = Math.floor(n);
+// }
+// console.log(res);
+
+
+//task10
+
+
+// let n = Number(prompt("ededi daxil edin"));
+// console.log(n % 10);
+
+
+//task11
+
+// let n = Number(prompt("ededi daxil edin"));
+// let res = 0;
+// while (n > 0)
+// {
+//     res = n % 10;
+//     n /= 10;
+//     n = Math.floor(n);
+// }
+// console.log(res);
+
+
+
+
+//task12
+
+// let n = Number(prompt("ededi daxil edin"));
+// for (let i = 5; i <= n; i += 5) {console.log(i);}
+
+
+
+
+//task13
+
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// console.log(arr.length);
+
+
+
+//task14
+
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// for (let i = 0; i < arr.length; i++)
+// {
+//     if (arr[i] < 0) {console.log(arr[i]);}
+// }
+
+
+
+//task15
+
+let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+let maks = arr[0];
+for (let i = 0; i < arr.length; i++)
+{
+    maks = Math.max(maks, arr[i]);
+}
+console.log(maks);
