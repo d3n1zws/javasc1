@@ -399,42 +399,168 @@
 //task28
 
 
-// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
-// arr.sort();
-// let n = arr.length, maks = 0, cnt = 1, res;
-// arr[n] = arr[n - 1] + 1;
-// for (let i = 0; i < arr.length - 1; i++)
+
+// let n = prompt("eded daxil edin");
+// let res = 0;
+// for (let i = 1; i * i <= n; i++)
 // {
-//     if (arr[i] == arr[i + 1])
+//     if (n % i == 0)
 //     {
-//         cnt++;
+//         res += i;
+//         if (n / i != i) {res += n / i;}
 //     }
-//     else
+// }
+// res -= n;
+// if (res == n) {console.log("mukemmel eded");}
+// else {console.log("mukemmel eded deyil");}
+
+
+
+//task29
+
+// let n = prompt("ededi daxil edin");
+// let nc = n, newn = 0;
+// while (n > 0)
+// {
+//     newn += (n % 10) ** 3;
+//     n /= 10;
+//     n = Math.floor(n);
+// }
+// if (nc == newn) {console.log("yes");}
+// else {console.log("no");}
+
+
+
+
+
+//task30
+
+
+// let n = prompt("ededi daxil edin");
+// let fact = 1;
+// while (n > 0)
+// {
+//     fact *= n;
+//     n--;
+// }
+// console.log(fact);
+
+
+
+//task31
+
+
+// function getArray(n)
+// {
+//     let arr = [];
+//     arr[0] = 0;
+//     arr[1] = 1;
+//     for (let i = 2; i < n; i++)
 //     {
-//         if (cnt > maks)
+//         arr[i] = arr[i - 1] + arr[i - 2];
+//     }
+//     return arr;
+// }
+// let n = prompt("eded daxil edin");
+// let arr = getArray(n);
+// for (let i = 0; i < n; i++)
+// {
+//     console.log(arr[i]);
+// }
+
+
+//task32
+
+
+// let a = prompt("eded daxil edin");
+// let b = prompt("eded daxil edin");
+// let res = 1;
+// for (let i = 1; i * i <= a; i++)
+// {
+//     if (b % i == 0 && a % i == 0)
+//     {
+//         res =  i;
+//         if (b % (a / i) == 0 && a % (a / i) == 0)
 //         {
-//             res = arr[i];
-//             maks = cnt;
+//             res = a / i;
+//             break;
 //         }
-//         cnt = 1;
 //     }
 // }
 // console.log(res);
 
 
-//task29
+
+//task33
 
 
-let n = prompt("eded daxil edin");
-let res = 0;
-for (let i = 1; i * i <= n; i++)
+// let a = prompt("eded daxil edin");
+// let b = prompt("eded daxil edin");
+// let res = 1;
+// for (let i = 1; i * i <= a; i++)
+// {
+//     if (b % i == 0 && a % i == 0)
+//     {
+//         res =  i;
+//         if (b % (a / i) == 0 && a % (a / i) == 0)
+//         {
+//             res = a / i;
+//             break;
+//         }
+//     }
+// }
+// console.log(a * b / res);
+
+
+
+
+// task34
+
+// let n = prompt("eded daxil edin");
+// let str = "";
+// while (n > 0)
+// {
+//     let x;
+//     if (n % 2 == 0)
+//     {
+//         x = '0';
+//     }
+//     else
+//     {
+//         x = '1';
+//     }
+//     str = x + str;
+//     n /= 2;
+//     n = Math.floor(n);
+// }
+// console.log(str);
+
+
+
+//task35
+
+
+
+// let n = prompt("eded daxil edin");
+// let maks = 0;
+// while (n > 0)
+// {
+//     maks = Math.max((n % 10), maks);
+//     n /= 10;
+//     n = Math.floor(n);
+// }
+// console.log(maks);
+
+
+//task36
+
+
+let n = prompt("ededi daxil edin");
+let newn = 0;
+while (n > 0)
 {
-    if (n % i == 0)
-    {
-        res += i;
-        if (n / i != i) {res += n / i;}
-    }
+    newn = newn * 10 + (n % 10);
+    n /= 10;
+    n = Math.floor(n);
 }
-res -= n;
-if (res == n) {console.log("mukemmel eded");}
-else {console.log("mukemmel eded deyil");}
+console.log(newn);
