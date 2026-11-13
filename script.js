@@ -555,12 +555,12 @@
 //task36
 
 
-let n = prompt("ededi daxil edin");
-let newn = 0;
-while (n > 0)
-{
-    newn = newn * 10 + (n % 10);
-    n /= 10;
-    n = Math.floor(n);
-}
-console.log(newn);
+// let n = prompt("ededi daxil edin");
+// let newn = 0;
+// while (n > 0)
+// {
+//     newn = newn * 10 + (n % 10);
+//     n /= 10;
+//     n = Math.floor(n);
+// }
+// console.log(newn);
