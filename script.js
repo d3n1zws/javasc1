@@ -344,7 +344,97 @@
 //task25
 
 
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// arr.sort();
+// console.log(arr[arr.length - 2]);
 
-let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
-arr.sort();
-console.log(arr[arr.length - 2]);
+
+
+//task26
+
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// arr.sort();
+// let a = [], j = 0;
+// arr[arr.length] = arr[arr.length - 1] - 1;
+// for (let i = 0; i < arr.length - 1; i++)
+// {
+//     if (arr[i] == arr[i + 1])
+//     {
+//         continue;
+//     }
+//     a[j] = arr[i];
+//     j++;
+// }
+
+// for (let i = 0; i < a.length; i++)
+// {
+//     console.log(a[i]);
+// }
+
+
+
+
+//task27
+
+
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// function reverseArray(arr)
+// {
+//     let a = [];
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         a[i] = arr[arr.length - i - 1];
+//     }
+//     return a;
+// }
+// arr = reverseArray(arr);
+// for (let i = 0; i < arr.length; i++)
+// {
+//     console.log(arr[i]);
+// }
+
+
+
+
+//task28
+
+
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// arr.sort();
+// let n = arr.length, maks = 0, cnt = 1, res;
+// arr[n] = arr[n - 1] + 1;
+// for (let i = 0; i < arr.length - 1; i++)
+// {
+//     if (arr[i] == arr[i + 1])
+//     {
+//         cnt++;
+//     }
+//     else
+//     {
+//         if (cnt > maks)
+//         {
+//             res = arr[i];
+//             maks = cnt;
+//         }
+//         cnt = 1;
+//     }
+// }
+// console.log(res);
+
+
+//task29
+
+
+let n = prompt("eded daxil edin");
+let res = 0;
+for (let i = 1; i * i <= n; i++)
+{
+    if (n % i == 0)
+    {
+        res += i;
+        if (n / i != i) {res += n / i;}
+    }
+}
+res -= n;
+if (res == n) {console.log("mukemmel eded");}
+else {console.log("mukemmel eded deyil");}
