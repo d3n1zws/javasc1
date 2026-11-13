@@ -80,11 +80,27 @@
 
 
 //task7
+
 // let a = prompt("birinci deyeri daxil edin");
 // let b = prompt("ikinci deyeri daxil edin"); 
-// function check(a, b)
+// function sumNumbers(a, b)
 // {
-//     if (!isNaN(a) && !isNaN(b)) {console.log("YES");}
-//     else {console.log("NO");}
+//     if (isNaN(a) || isNaN(b)) 
+//     {
+//         console.log("NO");
+//         return;
+//     }
+//     let sum = 0;
+//     for (let i = Number(a); i <= Number(b); i++)
+//     {
+//         sum += i;
+//     }
+//     console.log(sum);
 // }
-// check(a, b);
+// sumNumbers(a, b);
+
+
+
+
+//task8
+
