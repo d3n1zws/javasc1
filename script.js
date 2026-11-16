@@ -564,3 +564,715 @@
 //     n = Math.floor(n);
 // }
 // console.log(newn);
+
+
+
+//task37
+
+// let a = prompt("eded daxil edin");
+// let b = prompt("eded daxil edin");
+// let arr = [], j = 0;
+// for (let i = a; i <= b; i++)
+// {
+//     let flag = 0;
+//     for (let j = 2; j * j <= i; j++)
+//     {
+//         if (i % j == 0)
+//         {
+//             flag = 1;
+//         }
+//     }
+//     if (!flag)
+//     {
+//         arr[j] = i;
+//         j++;
+//     }
+// }
+// for (let i = 0; i < arr.length; i++)
+// {
+//     console.log(arr[i]);
+// }
+
+
+
+
+//task 38
+
+// function func(arr, k)
+// {
+//     let a = [], x = 0;
+//     for (let i = arr.length - k; i < arr.length; i++)
+//     {
+//         a[x] = arr[i];
+//         x++;
+//     }
+//     for (let i = 0; i < arr.length - k; i++)
+//     {
+//         a[x] = arr[i];
+//         x++;
+//     }
+//     return a;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// let k = prompt("eded daxil edin");
+// arr = func(arr, k);
+// for (let i = 0; i < arr.length; i++)
+// {
+//     console.log(arr[i]);
+// }
+
+
+
+//task39
+
+// function func(arr)
+// {
+//     let a = [], x = 0;
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         if (arr[i] == 0) {continue;}
+//         a[x] = arr[i];
+//         x++;
+//     }
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         if (arr[i] != 0) {continue;}
+//         a[x] = arr[i];
+//         x++;
+//     }
+//     return a;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// arr = func(arr);
+// for (let i = 0; i < arr.length; i++)
+// {
+//     console.log(arr[i]);
+// }
+
+
+
+//task40
+
+// function func(arr)
+// {
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         if (arr[i] == i + 1) {continue;}
+//         return i + 1;
+//     }
+//     return arr.length + 1;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// arr.sort((a, b) => a - b);
+// console.log(func(arr));
+
+
+
+
+
+//task41
+
+// function func(arr, a)
+// {
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         if (arr[i] != a[i])
+//             return false;
+//     }
+//     return true;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// let a = [];
+// for (let i = 0; i < arr.length; i++)
+// {
+//     a[i] = arr[i];
+// }
+// arr.sort((a, b) => a - b);
+// console.log(func(arr, a));
+
+
+
+
+//task42
+
+// function func(arr, a)
+// {
+//     let i = 0, j = 0, x = 0;
+//     let newa = [];
+//     while (i < arr.length || j < a.length)
+//     {
+//         if (i == arr.length)
+//         {
+//             newa[x] = a[j];
+//             j++;
+//             x++;
+//             continue;
+//         }
+//         if (j == a.length)
+//         {
+//             newa[x] = arr[i];
+//             i++;
+//             x++;
+//             continue;
+//         }
+//         if (arr[i] > a[j])
+//         {
+//             newa[x] = a[j];
+//             j++;
+//         }
+//         else
+//         {
+//             newa[x] = arr[i];
+//             i++;
+//         }
+//         x++;
+//     }
+//     return newa;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// let a = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// let newa = func(arr, a);
+// for (let i = 0; i < newa.length; i++)
+// {
+//     console.log(newa[i]);
+// }
+
+
+
+//task43
+
+// function func(arr)
+// {
+//     let obj = 
+//     {
+//         even: [],
+//         odd: []
+//     };
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         if (arr[i] % 2 == 0) {obj.even.push(arr[i]);}
+//         else {obj.odd.push(arr[i]);}
+//     }
+//     return obj;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// console.log(func(arr));
+
+
+
+
+//task44
+
+// function func(arr)
+// {
+//     let a = [];
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         let flag = true;
+//         for (let j = 0; j < arr.length; j++)
+//         {
+//             if (i == j) {continue;}
+//             if (arr[i] == arr[j])
+//             {
+//                 flag = false;
+//                 break;
+//             }
+//         }
+//         if (flag)
+//         {
+//             a.push(arr[i]);
+//         }
+//     }
+//     return a;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// console.log(func(arr));
+
+
+
+
+//task45
+
+// function func(arr)
+// {
+//     let a = [], x = 0;
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         x += arr[i];
+//     }
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         if (arr[i] > x / arr.length)
+//         {
+//             a.push(arr[i]);
+//         }
+//     }
+//     return a;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// console.log(func(arr));
+
+
+
+
+//task46
+
+// function func(arr, a)
+// {
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         if (arr[i] != a[i])
+//             return false;
+//     }
+//     return true;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// let a = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// console.log(func(arr, a));
+
+
+
+
+
+
+// task47
+
+// function func(arr)
+// {
+//     let a = [], x = 0;
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         if (arr[i] > 0) {continue;}
+//         a[x] = arr[i];
+//         x++;
+//     }
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         if (arr[i] < 0) {continue;}
+//         a[x] = arr[i];
+//         x++;
+//     }
+//     return a;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// arr = func(arr);
+// for (let i = 0; i < arr.length; i++)
+// {
+//     console.log(arr[i]);
+// }
+
+
+
+
+//task48
+
+// function func(str)
+// {
+//     let s = "aeiouəöüı";
+//     let cnt = 0;
+//     for (let i = 0; i < str.length; i++)
+//     {
+//         if (s.includes(str[i].toLowerCase()))
+//         {
+//             cnt++;
+//         }
+//     }
+//     return cnt;
+// }
+// let str = prompt("String daxil edin");
+// console.log(func(str));
+
+
+
+
+//task49
+
+// function func(str)
+// {
+//     let cnt = 0;
+//     str = str + ' ';
+//     for (let i = 0; i < str.length - 1; i++)
+//     {
+//         if (str[i] != ' ' && str[i + 1] == ' ')
+//         {
+//             cnt++;
+//         }
+//     }
+//     return cnt;
+// }
+// let str = prompt("String daxil edin");
+// console.log(func(str));
+
+
+
+
+//task50
+
+// function func(str)
+// {
+//     let obj = {};
+//     for (let i = 0; i < str.length; i++)
+//     {
+//         let c = str[i];
+//         if (obj[c] === undefined)
+//         {
+//             obj[c] = 0;
+//         }
+//         obj[c]++;
+//     }
+//     return obj;
+// }
+// let str = prompt("String daxil edin");
+// console.log(func(str));
+
+
+
+// task51
+
+// function func(arr)
+// {
+//     let x = 0, str = "";
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         if (arr[i].length > x)
+//         {
+//             str = arr[i];
+//             x = arr[i].length;
+//         }
+//     }
+//     return str;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ");
+// console.log(func(arr));
+
+
+
+
+//task52
+
+// function func(str, s)
+// {
+//     if (str.length != s.length)
+//         return false;
+//     for (let i = 0; i < str.length; i++)
+//     {
+//         if (str[i] != s[i])
+//             return false;
+//     }
+//     return true;
+// }
+// let str = prompt("string daxil edin");
+// let s = prompt("string daxil edin");
+// str = str.split("").reverse().join("");
+// console.log(func(str, s));
+
+
+
+//task53
+
+
+// function func(str)
+// {
+//     let s = str[0].toUpperCase();
+//     for (let i = 1; i < str.length; i++)
+//     {
+//         if (str[i - 1] == ' ' && str[i] != ' ')
+//         {
+//             s += str[i].toUpperCase();
+//         }
+//         else
+//         {
+//             s += str[i];
+//         }
+//     }
+//     return s;
+// }
+// let str = prompt("string daxil edin");
+// console.log(func(str));
+
+
+
+
+// task54
+
+// function func(arr, search)
+// {
+//     let cnt = 0;
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         if (arr[i].toLowerCase() == search.toLowerCase())
+//         {
+//             cnt++;
+//         }
+//     }
+//     return cnt;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ");
+// let search = prompt("search daxil edin");
+// console.log(func(arr, search));
+
+
+
+
+//task55
+
+
+// let users = [
+//     { name: "Kamran", age: 17 },
+//     { name: "Aysel", age: 22 },
+//     { name: "Rəşad", age: 19 }
+// ];
+// function func(users)
+// {
+//     let arr = [];
+//     for (let i = 0; i < users.length; i++)
+//     {
+//         if (users[i].age > 18)
+//         {
+//             arr.push(users[i].name);
+//         }
+//     }
+//     return arr;
+// }
+// console.log(func(users));
+
+
+
+//task56
+
+// function func(products)
+// {
+//     let arr = [];
+//     for (let i = 0; i < products.length; i++)
+//     {
+//         arr.push(products[i].price * 1.18);
+//     }
+//     return arr;
+// }
+// let products = [
+//     { name: "Phone", price: 1000 },
+//     { name: "Laptop", price: 2000 },
+//     { name: "Mouse", price: 50 }
+// ];
+// console.log(func(products));
+
+
+
+
+//task57
+
+// function func(employees)
+// {
+//     let obj = {};
+//     for (let i = 0; i < employees.length; i++)
+//     {
+//         let dep = employees[i].department;
+//         if (obj[dep] === undefined)
+//         {
+//             obj[dep] = [];
+//         }
+//         obj[dep].push(employees[i].name);
+//     }
+//     return obj;
+// }
+// let employees = 
+// [
+//     { name: "Elvin", department: "IT" },
+//     { name: "Günay", department: "HR" },
+//     { name: "Tural", department: "IT" }
+// ];
+// console.log(func(employees));
+
+
+
+
+//task58
+
+// function func(arr)
+// {
+//     let obj = {};
+//     let maks = 0, ans;
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         if (obj[arr[i]] === undefined)
+//         {
+//             obj[arr[i]] = 0;
+//         }
+//         obj[arr[i]]++;
+//         if (obj[arr[i]] > maks)
+//         {
+//             maks = obj[arr[i]];
+//             ans = arr[i];
+//         }
+//     }
+//     return ans;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// console.log(func(arr));
+
+
+
+
+//task59
+
+// function func(arr)
+// {
+//     let a = [], b = [];
+//     let mid = Math.floor(arr.length / 2);
+//     for (let i = 0; i < mid; i++)
+//     {
+//         a.push(arr[i]);
+//     }
+//     for (let i = mid; i < arr.length; i++)
+//     {
+//         b.push(arr[i]);
+//     }
+//     return [a, b];
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// console.log(func(arr));
+
+
+
+
+//task60
+
+
+// function func(arr, a)
+// {
+//     let b = [];
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         for (let j = 0; j < a.length; j++)
+//         {
+//             if (arr[i] == a[j])
+//             {
+//                 b.push(arr[i]);
+//                 break;
+//             }
+//         }
+//     }
+//     return b;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// let a = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// console.log(func(arr, a));
+
+
+
+
+//task61
+
+// function func(arr)
+// {
+//     let obj = {};
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         if (obj[arr[i]] === undefined)
+//         {
+//             obj[arr[i]] = 0;
+//         }
+//         obj[arr[i]]++;
+//     }
+//     return obj;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// console.log(func(arr));
+
+
+
+//task62
+
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// for (let i = 0; i < arr.length - 1; i++)
+// {
+//     if (arr[i] == arr[i + 1])
+//     {
+//         console.log(arr[i]);
+//     }
+// }
+
+
+
+//task63
+
+// let students = [
+//     { name: "Ali", age: 20, grade: 75 },
+//     { name: "Murad", age: 19, grade: 45 },
+//     { name: "Leyla", age: 21, grade: 90 },
+//     { name: "Nigar", age: 20, grade: 60 }
+// ];
+// let maks = students[0];
+// for (let i = 1; i < students.length; i++)
+// {
+//     if (students[i].grade > max.grade)
+//     {
+//         max = students[i];
+//     }
+// }
+// console.log(max);
+
+
+
+//task64
+
+
+// let products = [
+//     { name: "Mouse", price: 40 },
+//     { name: "Keyboard", price: 80 },
+//     { name: "Monitor", price: 300 },
+//     { name: "Headset", price: 120 }
+// ];
+// let newp = [];
+// for (let i = 0; i < products.length; i++)
+// {
+//     if (products[i].price < 100)
+//     {
+//         newp.push(products[i]);
+//     }
+// }
+// console.log(newp);
+
+
+
+//task65
+
+
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// let cnt = 1, max = 1;
+// for (let i = 1; i < arr.length; i++)
+// {
+//     if (arr[i] > arr[i - 1])
+//     {
+//         cnt++;
+//     }
+//     else
+//     {
+//         if (cnt > max)
+//         {
+//             max = cnt;
+//         }
+//         cnt = 1;
+//     }
+// }
+// console.log(max);
+
+
+//task66
+
+// function func(arr)
+// {
+//     let obj = {};
+//     for (let i = 0; i < arr.length; i++)
+//     {
+//         if (obj[arr[i]] == undefined)
+//         {
+//             obj[arr[i]] = 0;
+//         }
+//         obj[arr[i]]++;
+//     }
+//     return obj;
+// }
+// let arr = prompt("Array elementlerini daxil edin").split(" ").map(Number);
+// console.log(func(arr));
+clg
